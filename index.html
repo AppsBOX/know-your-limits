@@ -30,7 +30,7 @@
 
     <header>
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Know Your Limits!</a>
       </div>
@@ -59,14 +59,12 @@
           <input type="hidden" name="user_id" value="41QQCAQV3C7JY1QC5EA3">
           <input type="hidden" name="form_id" value="1">
           <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input type="text" name="name" class="form-control">
+            <input type="text" name="name" class="form-control" placeholder="Name">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email Address</label>
-            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <input type="email" name="email" class="form-control" placeholder="Email Address">
           </div>
-          <textarea name="comments" class="form-control" rows="9"></textarea>
+          <textarea name="comments" class="form-control" rows="9" placeholder="Your message..."></textarea>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -94,7 +92,7 @@
         Please pardon the vanity of my project. Of course, do feel free to speak out in the comment section below.
       </p>
       <p>
-        <span class="author">Benoit Herrmann</span>
+        <span class="author pull-right">Benoit Herrmann</span>
       </p>
     </div>
     <div class="col-sm-4">
@@ -135,6 +133,17 @@
 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68356215-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
