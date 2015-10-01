@@ -6,6 +6,13 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="{{ page.og_image | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:type" content="books.book">
+  
+
   <link rel="stylesheet" href="{{ "/css/bootstrap-modified.min.css" | prepend: site.baseurl }}"> 
   <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}"> 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
