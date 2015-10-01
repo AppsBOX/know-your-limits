@@ -10,6 +10,8 @@ url: "http://know-your-limits.com" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
+destination: ../know-your-limits-gh-pages
+
 # Build settings
 markdown: kramdown
 
