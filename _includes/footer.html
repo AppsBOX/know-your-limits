@@ -7,9 +7,26 @@
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1509185776066495',
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
 $(function() {
-  $('#contactButton').on('click', function(e) {
-    $('#contactModal').modal('show');
-  });
+ $('#contactButton').on('click', function(e) {
+   $('#contactModal').modal('show');
+ });
 });
 </script>
