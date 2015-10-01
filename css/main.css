@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Lusitana);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
+body {
+  padding-top: 70px; }
+
+header {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: black;
+  color: white; }
