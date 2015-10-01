@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<div id="contactModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="http://formtoemail.com/user_forms.php" method="post" enctype="text/plain">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Contact Me</h4>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" name="user_id" value="41QQCAQV3C7JY1QC5EA3">
+          <input type="hidden" name="form_id" value="1">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" name="name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email Address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <textarea name="comments" class="form-control" rows="9"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Foreword</h2>
+      <p>
+        Hi, I'm a 30-year-old Frenchman. I believe we are going through exceptionally perilous times, so I wrote this “one-page book” with the hope that it will help curious readers focus on the economic issues that matter.
+      </p>
+      <p>
+        <em>Know Your Limits!</em> may require some academic knowledge, hopefully not much. Read it carefully: you may find answers on why (in my opinion) Roosevelt's New Deal cannot be replicated today, or why the U.S. Republicans are hurting America when they ask to untax the rich, or why Germany is such a monetary hawk, or why the euro has no future in its current form, or why failed Abenomics may lead to nationalism. You may even find advice on how to manage your savings!
+      </p>
+      <p>
+        If you're a politician, I hope this book will bring you fresh ideas: you don't want to be one of those “old generals fighting the last war”. If you're an ambitious engineer, I hope this book will convince you to change the world by not designing yet another photo-sharing application, but by inventing much needed greentech solutions. And if you're a citizen, I hope this book will help you understand what's going on if things were to get rocky.
+      </p>
+      <p>
+        Please pardon the vanity of my project. Of course, do feel free to speak out in the comment section below.
+      </p>
+      <p>
+        <span class="author">Benoit Herrmann</span>
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h2>Download</h2>
+      <a href="Know Your Limits.pdf" type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-download"></i></i> Download PDF</a>
+      <small>(actually, you may want to print it before reading)</small>
+    </div>
+  </div>
+  <div>
+    <h2>Forum</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'knowyourlimits';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</div>
