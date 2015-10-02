@@ -1,6 +1,9 @@
 ---
 layout: default
 og_image: 'images/know-your-limits-cover.jpg'
+og_title: '"Know Your Limits!": A Simplified, No-Nonsense, Summary of the Current Economy'
+og_description: "What's wrong with the economy? What should we do about it? Find thought-provoking insights in this short and incisive paper."
+twitter_text: '1-page paper with clear and thought-provoking insights on world economy. Check it out !'
 ---
 
 <div id="contactModal" class="modal fade">
@@ -57,8 +60,8 @@ og_image: 'images/know-your-limits-cover.jpg'
       <small>(actually, you may want to print it before reading)</small>
       
       <h2>Share</h2>
-      <button type="button" class="btn btn-default btn-lg btn-block"><i class="fa fa-facebook"></i> Share on Facebook</button>
-      <button type="button" class="btn btn-default btn-lg btn-block"><i class="fa fa-twitter"></i> Share on Twitter</button>
+      <button type="button" id="share-facebook" class="btn btn-default btn-lg btn-block"><i class="fa fa-facebook"></i> Share on Facebook</button>
+      <a href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.twitter_text }}" id="share-twitter" class="btn btn-default btn-lg btn-block"><i class="fa fa-twitter"></i> Share on Twitter</a>
     </div>
   </div>
   <div>

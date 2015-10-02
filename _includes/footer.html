@@ -16,8 +16,6 @@
   ga('create', 'UA-68356215-1', 'auto');
   ga('send', 'pageview');
 
-</script>
-<script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1509185776066495',
@@ -32,29 +30,39 @@
      js = d.createElement(s); js.id = id;
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Include the Twitter Library
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; 
+    js=d.createElement(s); js.id=id;
+    js.src="https://platform.twitter.com/widgets.js"; 
+    fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
 </script>
 <script>
 $(function() {
- $('#contactButton').on('click', function(e) {
-   $('#contactModal').modal('show');
- });
+  $('#contactButton').on('click', function(e) {
+    $('#contactModal').modal('show');
+  });
   
- $('#share-facebook').on('click', function(e) {
-   FB.ui({
-     method: 'share',
-     href: '{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}'
-   }, function (response) {
-     if (response && !response.error_code) {
-       console.debug('Facebook share completed');
-     } else {
-       console.debug('Facebook share cancelled');
-     }
-   });
- });
+  $('#share-facebook').on('click', function(e) {
+    FB.ui({
+      method: 'share',
+      href: '{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}'
+    }, function (response) {
+      if (response && !response.error_code) {
+        console.debug('Facebook share completed');
+      } else {
+        console.debug('Facebook share cancelled');
+      }
+    });
+  });
  
- $('#share-twitter').on('click', function(e) {
-   console.debug("Twitter share");
- }); 
+  $('#share-twitter').on('click', function(e) {
+    console.debug("Twitter share");
+  }); 
 });
 </script>
