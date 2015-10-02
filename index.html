@@ -166,6 +166,23 @@ $(function() {
  $('#contactButton').on('click', function(e) {
    $('#contactModal').modal('show');
  });
+  
+ $('#share-facebook').on('click', function(e) {
+   FB.ui({
+     method: 'share',
+     href: 'http://know-your-limits.com/'
+   }, function (response) {
+     if (response && !response.error_code) {
+       console.debug('Facebook share completed');
+     } else {
+       console.debug('Facebook share cancelled');
+     }
+   });
+ });
+ 
+ $('#share-twitter').on('click', function(e) {
+   console.debug("Twitter share");
+ }); 
 });
 </script>
 
