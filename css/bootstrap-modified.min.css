@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 hr {
-	height: 10px;
+	border-width: 2px 0px 0px;
 	color: #CCDAEC;
 	} 
 article,
