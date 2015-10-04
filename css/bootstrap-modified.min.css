@@ -1085,7 +1085,7 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
+  font-family: 'Open Sans', serif;
   font-size: inherit;
   line-height: inherit;
 }
