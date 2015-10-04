@@ -3123,14 +3123,14 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #286090;
+  background-color: #152235;
   border-color: #204d74;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #286090;
+  background-color: #152235;
   border-color: #204d74;
 }
 .btn-primary:active:hover,
