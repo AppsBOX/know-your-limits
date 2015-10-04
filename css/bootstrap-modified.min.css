@@ -49,9 +49,6 @@ a:active,
 a:hover {
   outline: 0;
 }
-fa:hover {
-  background-color: #7FC9FF;
-}
 abbr[title] {
   border-bottom: 1px dotted;
 }
