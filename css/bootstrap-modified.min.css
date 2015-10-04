@@ -1089,6 +1089,9 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+button {
+  font-family: 'Source Sans Pro', serif;
+}
 a {
   color: #337ab7;
   text-decoration: none;
