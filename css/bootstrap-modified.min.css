@@ -220,6 +220,9 @@ th {
   img {
     max-width: 100% !important;
   }
+  p {
+    text-align: justify;
+  }
   p,
   h2,
   h3 {
