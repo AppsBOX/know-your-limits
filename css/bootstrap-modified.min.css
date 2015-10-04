@@ -1262,7 +1262,8 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 28px;
+  font-size: 34px;
+  text-align:center;
 }
 h4,
 .h4 {
