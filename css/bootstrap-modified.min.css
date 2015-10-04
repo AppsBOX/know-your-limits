@@ -118,6 +118,10 @@ textarea {
 button {
   overflow: visible;
 }
+buttonFB:focus {
+  color: #FF5C2B;
+  background-color: transparent;
+}
 button,
 select {
   text-transform: none;
