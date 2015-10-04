@@ -12,6 +12,10 @@ html {
 body {
   margin: 0;
 }
+hr {
+	height: 10px;
+	color: #CCDAEC;
+	} 
 article,
 aside,
 details,
