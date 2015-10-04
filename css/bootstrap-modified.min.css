@@ -12,10 +12,6 @@ html {
 body {
   margin: 0;
 }
-hr {
-	border-width: 2px 0px 0px;
-	color: #CCDAEC;
-	} 
 article,
 aside,
 details,
@@ -99,6 +95,8 @@ figure {
 hr {
   box-sizing: content-box;
   height: 0;
+  border-width: 2px 0px 0px;
+  color: #CCDAEC;
 }
 pre {
   overflow: auto;
