@@ -226,9 +226,6 @@ th {
     orphans: 3;
     widows: 3;
   }
-  p {
-    text-align : justify;
-  }
   h2,
   h3 {
     page-break-after: avoid;
@@ -1079,7 +1076,8 @@ body {
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
-}
+  text-align : justify;
+  }
 input,
 button,
 select,
