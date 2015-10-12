@@ -176,6 +176,14 @@
     fjs.parentNode.insertBefore(js, fjs);
     return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
   }(document, "script", "twitter-wjs"));
+  
+  // On ready, register the callback...
+  twttr.ready(function (twttr) {
+    twttr.events.bind('tweet', function (event) {
+      console.debug(event);
+      console.debug("tweet completed");
+    });
+  });
 </script>
 <script>
 $(function() {
@@ -184,10 +192,12 @@ $(function() {
   });
   
   $('#share-facebook').on('click', function(e) {
+    ga('send', 'event', 'Sharing', 'Facebook');
     FB.ui({
       method: 'share',
       href: 'http://know-your-limits.com/'
     }, function (response) {
+      console.debug(response);
       if (response && !response.error_code) {
         console.debug('Facebook share completed');
       } else {
@@ -197,6 +207,7 @@ $(function() {
   });
  
   $('#share-twitter').on('click', function(e) {
+    ga('send', 'event', 'Sharing', 'Twitter');
     console.debug("Twitter share");
   }); 
 });
